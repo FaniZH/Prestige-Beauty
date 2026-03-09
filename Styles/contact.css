@@ -1,0 +1,150 @@
+/* CONTACT HERO */
+.contactHero{
+height:55vh;
+background:url("../images/hero.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+color:white;
+}
+
+.contactHero .heroOverlay{
+position:absolute;
+top:0; left:0;
+width:100%; height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+.contactHero .heroContent{
+position:relative;
+z-index:2;
+}
+
+.contactHero h1{
+font-family:'Playfair Display',serif;
+font-size:52px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.contactHero p{
+font-family:'Poppins',sans-serif;
+font-size:18px;
+}
+
+/* CONTACT PAGE */
+.contactPage{
+padding:80px 10%;
+display:flex;
+flex-direction:column;
+gap:50px;
+}
+
+/* CONTACT FORM & MAP GRID */
+.contactContainer{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:start;
+}
+
+/* FORM */
+.contactForm{
+background:white;
+padding:40px;
+border-radius:8px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contactForm h2{
+font-family:'Playfair Display',serif;
+margin-bottom:25px;
+font-size:30px;
+}
+
+.contactForm .inputGroup{
+display:flex;
+gap:15px;
+margin-bottom:15px;
+}
+
+.contactForm input,
+.contactForm textarea,
+.contactForm select{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:4px;
+font-family:'Poppins',sans-serif;
+font-size:15px;
+}
+
+.contactForm textarea{
+resize:none;
+min-height:120px;
+}
+
+.contactForm button{
+margin-top:15px;
+padding:14px;
+background:black;
+color:white;
+border:none;
+cursor:pointer;
+width:100%;
+font-size:16px;
+border-radius:4px;
+}
+
+.contactForm button:hover{
+background:#333;
+}
+
+/* MAP */
+.contactMap h2{
+font-family:'Playfair Display',serif;
+margin-bottom:15px;
+}
+
+.contactMap iframe{
+border-radius:8px;
+width:100%;
+height:100%;
+min-height:400px;
+}
+
+/* CONTACT INFO BELOW */
+.contactInfo{
+margin-top:40px;
+text-align:center;
+font-family:'Poppins',sans-serif;
+}
+
+.contactInfo p{
+margin:8px 0;
+font-size:16px;
+}
+
+.contactSocials{
+margin-top:15px;
+}
+
+.contactSocials a{
+margin:0 10px;
+font-size:22px;
+color:black;
+transition:0.3s;
+}
+
+.contactSocials a:hover{
+color:#555;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:992px){
+    .contactContainer{
+        grid-template-columns:1fr;
+    }
+}

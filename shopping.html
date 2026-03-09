@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>prestige beauty</title>
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/shop.css">
+</head>
+<body>
+    <div class="navigationBar">
+        <div class="logo">
+            <div class="logoImg">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="list">
+            <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="#Services">Services</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="gallary.html">Gallary</a></li>
+            <li class="cartIcon">
+            <a href="shopping.html">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span id="cartCount">0</span>
+            </a>
+            </li>
+            <li> <a href="booking.html" id="book">Book Now</a></li>
+            <li> <a href="contact.html" id="contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+<section class="shopHero">
+
+<div class="heroOverlay"></div>
+
+<div class="heroContent">
+
+<h1>Beauty Store</h1>
+
+<p>Shop premium hair, wigs and beauty products</p>
+
+</div>
+
+</section>
+
+
+<section class="shopSection">
+
+<h2>Our Products</h2>
+
+<div class="shopFilters">
+
+<button class="shopFilter active" data-filter="all">All</button>
+
+<button class="shopFilter" data-filter="wigs">Wigs</button>
+
+<button class="shopFilter" data-filter="extensions">Hair Extensions</button>
+
+<button class="shopFilter" data-filter="products">Hair Products</button>
+
+</div>
+
+
+<div class="productGrid">
+
+<!-- PRODUCT -->
+
+<div class="productCard wigs">
+
+<img src="images/11.png">
+
+<h3>Brazilian Lace Wig</h3>
+
+<p>Premium natural looking lace wig.</p>
+
+<span class="price">R850</span>
+
+<button class="addCart"
+data-name="Brazilian Lace Wig"
+data-price="850"
+data-img="images/wig1.jpg"
+>Add to Cart</button>
+
+</div>
+
+
+<div class="productCard extensions">
+
+<img src="images/hair1.png">
+
+<h3>Hair Extensions</h3>
+
+<p>Luxury 100% human hair extensions.</p>
+
+<span class="price">R650</span>
+
+<button class="addCart"
+data-name="Hair Extensions"
+data-price="650"
+data-img="images/ext1.jpg"
+>Add to Cart</button>
+
+</div>
+
+
+<div class="productCard products">
+
+<img src="images/oil.png">
+
+<h3>Hair Growth Oil</h3>
+
+<p>Natural oil for healthy hair growth.</p>
+
+<span class="price">R120</span>
+
+<button class="addCart"
+data-name="Hair Growth Oil"
+data-price="120"
+data-img="images/product1.jpg"
+>Add to Cart</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<a href="cart.html" class="goCartBtn">
+
+<i class="fa-solid fa-bag-shopping"></i>
+
+Go To Cart
+
+</a>
+
+<div class="cartPopup">
+<i class="fa-solid fa-circle-check"></i>
+<p>Product added to cart</p>
+</div>
+
+<div class="popupOverlay"></div>
+
+    <footer class="footer">
+
+    <div class="footerTop">
+
+        <!-- Logo + Tagline -->
+        <div class="footerLogo">
+            <img src="images/logo.png" alt="Prestige Beauty Logo">
+        </div>
+
+
+        <!-- Links -->
+        <div class="footerLinks">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallary.html">Gallery</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footerContact">
+            <h3>Contacts</h3>
+            <p><i class="fas fa-location-dot"></i> Durban, KwaZulu-Natal</p>
+
+            <p><i class="fas fa-phone"></i> +27 73 835 6321</p>
+
+            <p><i class="fas fa-envelope"></i> info@prestigebeautysalon.co.za</p>
+            <div class="footerSocials">
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+           </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footerBottom">
+        <p>© <span id="currentYear"></span> Prestige Beauty Salon. All rights reserved. | Designed by ZH Madlala</p>
+    </div>
+
+    </footer>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/shop.js"></script>
+</body>
+</html>

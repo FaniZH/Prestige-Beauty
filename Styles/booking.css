@@ -1,0 +1,38 @@
+/* BOOKING HERO */
+
+.bookingHero{
+height:55vh;
+background:url("../images/Booking.png") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+.bookingHero .heroOverlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+.bookingHero .heroContent{
+position:relative;
+z-index:2;
+}
+
+.bookingHero h1{
+font-family:'Playfair Display', serif;
+font-size:52px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.bookingHero p{
+font-family:'Poppins', sans-serif;
+font-size:18px;
+}
